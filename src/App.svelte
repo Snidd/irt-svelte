@@ -1,6 +1,8 @@
 <script lang="ts">
   import logo from './assets/svelte.png'
   import Counter from './lib/Counter.svelte'
+
+  export let entityId: string;
 </script>
 
 <main>
@@ -17,6 +19,10 @@
   <p>
     Check out <a href="https://github.com/sveltejs/kit#readme">SvelteKit</a> for
     the officially supported framework, also powered by Vite!
+  </p>
+
+  <p>
+    Entity ID passed from main.ts is <em>{entityId}</em>
   </p>
 </main>
 
