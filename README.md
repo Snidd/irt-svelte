@@ -8,9 +8,9 @@ This template should help get you started developing InRiver HTML Templates with
 
 ## Install & Development
 
-Download the template with **degit**
+Download the template with **degit** (replace {name} with whatever you wish)
 ```bash
-npx degit snidd/irt-svelte
+npx degit snidd/irt-svelte {name}
 ```
 Then start local development with `npm run dev` and `npm run build` to create single index.html with everything embedded.
 
