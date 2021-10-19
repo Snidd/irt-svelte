@@ -1,0 +1,10 @@
+/dist
+/build
+/.svelte
+node_modules
+/node_modules
+
+# Jest files #
+#############################
+coverage
+coverage/*
