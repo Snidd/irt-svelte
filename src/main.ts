@@ -1,10 +1,22 @@
 import App from "./App.svelte";
 
-let inriverWindow = window as any;
+declare global {
+  interface Window {
+    data: InRiverEntity[] | null;
+  }
+}
+
+interface InRiverEntity {
+  id: number;
+  displayName: string;
+  displayDescription: string;
+  displayPicture: string;
+}
 
 let entityId = -1;
-if (inriverWindow.hasOwnProperty("data") && Array.isArray(inriverWindow.data)) {
-  entityId = inriverWindow.data[0]?.id;
+
+if (window.data && Array.isArray(window.data)) {
+  entityId = window.data[0]?.id;
 }
 if (entityId === -1) {
   // EntityID for local development testing
