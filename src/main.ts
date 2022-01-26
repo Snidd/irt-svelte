@@ -1,4 +1,5 @@
 import App from "./App.svelte";
+import "./index.css";
 
 declare global {
   interface Window {

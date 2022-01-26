@@ -5,7 +5,7 @@
   export let entityId: string;
 </script>
 
-<main>
+<main class="h-max bg-slate-300">
   <img src={logo} alt="Svelte Logo" />
   <h1>Hello Typescript!</h1>
 
